@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PDF to XLSX Conversion</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+   
+    <!--<div class="sidemenu"></div>-->
+    <div class="centralform">
+        <div class="insert">
+            <!-- Utilizza un form per l'input del file -->
+            <form id="pdfForm">
+                <label for="file" class="labelfile">INSERISCI IL FILE PDF</label>   
+                <input type="text" id="nomeFileInput" placeholder="" color="white" class="fileinput"> 
+                <div id="nomeFileInput" class="excelViewer">     
+                <input type="file" name="file" id="fileInput" class="file" accept="application/pdf">
+                <!-- Usa un pulsante di tipo "button" per evitare il comportamento predefinito del form -->
+                <button type="button" class="bottonefile" onclick="caricaEConverti()">Convert</button> 
+                
+            </form>
+            <div id="excelViewer" class="excelViewer"></div>
+        </div>
+    </div>
+
+    <div id="output"></div>
+    <!-- Includi le librerie JavaScript necessarie -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-table-extractor/1.0.2/pdf-table-extractor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+    <!-- Includi il tuo script personalizzato -->
+    <script src="script.js"></script>
+</body>
+</html>

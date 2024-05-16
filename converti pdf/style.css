@@ -1,0 +1,83 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centralform {
+    border-radius: 20px;
+    background: linear-gradient(to bottom, aqua, black);
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    width: 800px;
+    height: 650px;
+
+    position: relative; /* Set the context for absolute positioning */
+}
+
+.labelfile {
+    width: 200px;
+    height: 20px;
+    color: black;
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    font-weight: bold;
+    position: absolute; /* Position absolutely within .centralform */
+    top: 10px; /* Adjust as needed to fine-tune the position */
+    left: 37%;
+}
+.file{
+    position: fixed;
+    display: flex;
+    text-align: center;
+    text-decoration: white;
+    color:white;
+    font-weight: bold;
+    top: 300px;
+    left: 630px;
+}
+.file-button{
+    position: fixed;
+    display: flexbox;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    width: 90px;
+    height: 45px;
+    text-decoration: white;
+    border-radius: 14px;
+}
+
+.bottonefile{
+    position: fixed;
+    display: flexbox;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    width: 90px;
+    height: 45px;
+    top: 400px;
+    left: 630px;
+    text-decoration: white;
+    border-radius: 14px;
+}
+
+.fileinput{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    width: 150px;
+    height: 15px;
+    top: 350px;
+    left: 630px;
+}
+
+.bottonedownload{
+    top: 400px;
+    left: 630px;
+}
